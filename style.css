@@ -73,12 +73,21 @@ label.box {
     border: 1px solid transparent;
 }
 
+img{
+    margin-right: 10px;
+    margin-top: 5px;
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+}
+
 #one:checked~label.first,
 #two:checked~label.second,
 #three:checked~label.third,
 #four:checked~label.fourth,
 #five:checked~label.fifth,
-#six:checked~label.sixth {
+#six:checked~label.sixth,
+#seven:checked~label.seventh {
     border-color: #f1bb01;
 }
 
@@ -87,7 +96,8 @@ label.box {
 #three:checked~label.third .circle,
 #four:checked~label.fourth .circle,
 #five:checked~label.fifth .circle,
-#six:checked~label.sixth .circle {
+#six:checked~label.sixth .circle, 
+#seven:checked~label.seventh .circle {
     border-color: #f1bb01;
     background-color: #fff;
 }
