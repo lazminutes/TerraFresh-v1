@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Payment</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+     
+</head>
+<body>
+      
+      <div class="container d-lg-flex" style="border-radius: 15px;">
+        <div class="box-1 bg-light user" style="margin-top: 20px;">
+            <div class="d-flex align-items-center mb-3">
+                <img src="Img/ava.png"
+                    class="pic rounded-circle" alt="">
+                <p class="ps-2 name">Dhika</p>
+            </div>
+            <p class="fw-bold">Payment Details :</p>
+            <div class="box-inner-1 pb-3 mb-3 ">
+                <div class="d-flex justify-content-between mb-3 userdetails">
+                    <p class="fw">Pepaya</p>
+                    <p class="fw-lighter">Rp 35.000</p>
+                </div>
+                <div id="my" class="carousel slide carousel-fade img-details" data-bs-ride="carousel"
+                    data-bs-interval="3000">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#my" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#my" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#my" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#my" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="Img/p2.png"
+                                class="d-block w-100 h-100" style="border-radius: 5px;">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Img/p1.png" 
+                                class="d-block w-100 h-100" style="border-radius: 5px;">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Img/p2.png"
+                                class="d-block w-100 h-100" style="border-radius: 5px;">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="Img/p1.png"
+                              class="d-block w-100 h-100" style="border-radius: 5px;">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#my" data-bs-slide="prev">
+                        <div class="icon">
+                            <span class="fas fa-arrow-left">prev</span>
+                        </div>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+
+                    <button class="carousel-control-next" type="button" data-bs-target="#my" data-bs-slide="next">
+                        <div class="icon">
+                            <span class="fas fa-arrow-right">next</span>
+                        </div>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
+                <p class="dis fw-bold mb-2" style="margin-top: 30px;">Pilih jasa kirim favorit anda</p>
+                <div class="radiobtn">
+                    <input type="radio" name="box" id="one">
+                    <input type="radio" name="box" id="two">
+                    <label for="one" class="box py-2 first">
+                        <div class="d-flex align-items-start">
+                            <span class="circle"></span>
+                            <div class="course">
+                                <div class="d-flex align-items-center justify-content-between mb-2">
+                                    <span class="fw-bold">
+                                      Grab                                   
+                                    </span>                                 
+                                </div>
+                                <span>Ongkos kirim Rp.10.000</span>
+                            </div>
+                        </div>
+                    </label>
+                    <label for="two" class="box py-2 second">
+                        <div class="d-flex">
+                            <span class="circle"></span>
+                            <div class="course">
+                                <div class="d-flex align-items-center justify-content-between mb-2">
+                                    <span class="fw-bold">
+                                        Gojek
+                                    </span>
+                                </div>
+                                <span>Ongkos kirim Rp.10.000</span>
+                            </div>
+                        </div>
+                    </label>
+                </div>
+            </div>
+
+            <div>
+              <p class=" dis fw-bold mb-2">Silahkan mengisi alamat anda</p>
+            </div>
+            <form action="">
+              <div class="mb-3">
+                  <input class="form-control" type="text" placeholder="Nama Penerima">
+                  <p class="dis mb-2">Nama</p>
+              </div>
+              <div class="mb-3">
+                <input class="form-control" type="text" placeholder="Alamat Penerima">
+                <p class="dis mb-2">Alamat</p>
+            </div>
+            <div class="mb-3">
+              <input class="form-control" type="text" placeholder="No Hp Penerima">
+              <p class="dis mb-2">No. Handphone</p>
+          </div>
+          </form>
+
+        </div>
+
+        <!-- Metode Pembayaran -->
+        <div class="box-2" style="margin-top: 80px;">
+            <div class="box-inner-2">
+                <form action="">
+                  <p class="dis fw-bold mb-2">Pilih Metode Pembayaran</p>
+                  <div class="radiobtn">
+                    <input type="radio" name="box" id="three">
+                    <input type="radio" name="box" id="four">
+                    <input type="radio" name="box" id="five">
+                    <input type="radio" name="box" id="six">
+                      <label for="three" class="box py-2 third">
+                          <div class="d-flex align-items-start">
+                              <span class="circle"></span>
+                              <div class="course">
+                                  <div class="d-flex align-items-center justify-content-between mb-2">
+                                      <span class="fw-bold">
+                                        Bank BRI (Dicek Otomatis)                                 
+                                      </span>                                     
+                                  </div>
+                                  <span>Hanya menerima dari Bank BRI</span>
+                              </div>
+                          </div>
+                      </label>
+                      <label for="four" class="box py-2 fourth">
+                          <div class="d-flex">
+                              <span class="circle"></span>
+                              <div class="course">
+                                  <div class="d-flex align-items-center justify-content-between mb-2">
+                                      <span class="fw-bold">
+                                        Bank BNI (Dicek Otomatis)
+                                      </span>
+                                  </div>
+                                  <span>Hanya menerima dari Bank BRI</span>
+                              </div>
+                          </div>
+                      </label>
+                      <label for="five" class="box py-2 fifth">
+                        <div class="d-flex">
+                            <span class="circle"></span>
+                            <div class="course">
+                                <div class="d-flex align-items-center justify-content-between mb-2">
+                                    <span class="fw-bold">
+                                      Bank BSI (Dicek Otomatis)
+                                    </span>
+                                </div>
+                                <span>Hanya menerima dari Bank Syariah Indonesia</span>
+                            </div>
+                        </div>
+                    </label>
+                    <label for="six" class="box py-2 sixth">
+                      <div class="d-flex">
+                          <span class="circle"></span>
+                          <div class="course">
+                              <div class="d-flex align-items-center justify-content-between mb-2">
+                                <span class="fw-bold">
+                                  Bank Mandiri (Dicek Otomatis)
+                                </span>
+                            </div>
+                            <span>Hanya menerima dari Mandiri</span>
+                        </div>
+                      </div>
+                  </label>
+                  </div>
+              </div>
+
+              <!-- Total -->
+                            <div class=" my-3">
+                                <p class="dis fw-bold mb-2">Total Biaya</p>
+                            </div>
+                            <div class="d-flex flex-column dis">
+                                <div class="d-flex align-items-center justify-content-between mb-2">
+                                    <p>Harga Satuan</p>
+                                    <p><span class="fas fa-dollar-sign"></span>Rp 35.000</p>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between mb-2">
+                                    <p>Ongkos Kirim</p>
+                                    <p><span class="fas fa-dollar-sign"></span>Rp. 10.000</p>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between mb-2">
+                                  <p>Biaya Penanganan</p>
+                                  <p><span class="fas fa-dollar-sign"></span>Rp. 5.000</p>
+                              </div>
+                                <div class="d-flex align-items-center justify-content-between mb-2">
+                                    <p class="fw-bold">Total</p>
+                                    <p class="fw-bold"><span class="fas fa-dollar-sign"></span>Rp. 50.000</p>
+                                </div>
+                                <div class="btn btn-primary mt-2">Buat Pesanan<span class="fas fa-dollar-sign px-1"></span>Rp 50.000
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+</body>
+</html>
