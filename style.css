@@ -154,11 +154,11 @@ input[type="radio"] {
 .form-select:focus {
     box-shadow: none;
     outline: none;
-    border: 1px solid #7700ff;
+    border: 1px solid #f1bb01;
 }
 
 .border:focus-within {
-    border: 1px solid #7700ff !important;
+    border: 1px solid #f1bb01 !important;
 }
 
 .box-2 .card-atm .form-control {
