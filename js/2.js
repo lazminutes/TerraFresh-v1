@@ -24,21 +24,9 @@ document.addEventListener("DOMContentLoaded", () => {
         alert('Congratz, your account has been created')
         const data = {email: json.email, name: json.name}
         localStorage.setItem("user", JSON.stringify(data))
-        // window.location.href = "/index.html";
+        window.location.href = "/index.html";
       })
       .catch(err => console.log(err))
   })
 
 })
-const renderPage = (page) => {
-  switch (page) {
-    case "pageLogin":
-      document.getElementById("pageLogin").style.display = "block"
-      document.getElementById("pageRegister").style.display = "none"
-      break;
-    default:
-      document.getElementById("pageRegister").style.display = "block"
-      document.getElementById("pageLogin").style.display = "none"
-      break;
-  }
-}

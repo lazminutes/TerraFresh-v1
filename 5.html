@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form Payment</title>
+    <title>Payment | TerraFresh</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/5.css">
      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap">
@@ -18,59 +18,18 @@
             <div class="d-flex align-items-center mb-3">
                 <img src="Img/ava.png"
                     class="pic rounded-circle" alt="avatar">
-                <p class="ps-2 name">Dhika</p>
+                <p class="ps-2 name" id="name-payment"></p>
             </div>
 
             <!-- Pembayaran -->
             <div class="box-inner-1 pb-3 mb-3">
-                <p class="fw-bold">Ringkasa Pembayaran :</p>
-                <div class="d-flex justify-content-between mb-3">
-                    <p class="fw">Pepaya</p>
-                    <p class="fw-lighter">Rp 35.000</p>
+                <p class="fw-bold">Ringkasan Pembayaran :</p>
+                <div class="d-flex flex-column justify-content-between mb-3" id="nota">
                 </div>
 
                 <!-- Carousel -->
-                <div id="image" class="carousel slide carousel-fade img-details" data-bs-ride="carousel"
-                    data-bs-interval="3000">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#image" data-bs-slide-to="0" class="active"
-                            aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#image" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#image" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                        <button type="button" data-bs-target="#image" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    <div class="row" id="carousel-payment">
                     </div>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="Img/p2.png"
-                                class="d-block w-100 h-100">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="Img/p1.png" 
-                                class="d-block w-100 h-100">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="Img/p2.png"
-                                class="d-block w-100 h-100">
-                        </div>
-                        <div class="carousel-item">
-                          <img src="Img/p1.png"
-                              class="d-block w-100 h-100">
-                      </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#image" data-bs-slide="prev">
-                        <div class="icon">
-                            <span class="fas fa-arrow-left">prev</span>
-                        </div>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-
-                    <button class="carousel-control-next" type="button" data-bs-target="#image" data-bs-slide="next">
-                        <div class="icon">
-                            <span class="fas fa-arrow-right">next</span>
-                        </div>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
 
                 <!-- Jasa kirim -->
                 <div class="radiobtn">
@@ -151,7 +110,7 @@
                                       TerraFresh Pay 
                                     </span>
                                 </div>
-                                <span>Sisa Saldo anda : Rp0</span>
+                                <span>Sisa Saldo anda : Rp 500.000</span>
                             </div>
                         </div>
                     </label>
@@ -218,28 +177,29 @@
                 </div>
                     <div class="d-flex flex-column dis">
                         <div class="d-flex align-items-center justify-content-between mb-2">
-                        <p>Harga Satuan</p>
-                        <p>Rp35.000</p>
+                        <p>Jumlah Harga</p>
+                        <p id="harga-satuan"></p>
                         </div>
                     <div class="d-flex align-items-center justify-content-between mb-2">
                         <p>Ongkos Kirim</p>
-                        <p>Rp10.000</p>
+                        <p>Rp 10.000</p>
                     </div>
                     <div class="d-flex align-items-center justify-content-between mb-2">
                         <p>Biaya Penanganan</p>
-                        <p>Rp5.000</p>
+                        <p>Rp 5.000</p>
                     </div>
                     <div class="d-flex align-items-center justify-content-between mb-2">
                         <p class="fw-bold">Total</p>
-                        <p class="fw-bold">Rp50.000</p>
+                        <p class="fw-bold" id="harga-total"></p>
                     </div>
-                    <div class="btn btn-warning mt-2">Bayar Rp50.000</div>
+                    <div class="btn btn-warning mt-2" id="div-total"></div>
                     </div>
             </div>
         </div>
     </div>
       
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
+        </script>
+        <script src="./js/5.js"></script>
 </body>
 </html>
