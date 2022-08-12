@@ -7,23 +7,23 @@ const fetchUsers = async () => {
 
 document.addEventListener("DOMContentLoaded", () => {
   const submitLogin = document.getElementById("submitLogin")
-  submitLogin.addEventListener("submit", (e) => {
+  submitLogin.addEventListener("submit", async (e) => {
     e.preventDefault()
     let email = String(document.getElementById("loginEmail").value)
     let password = String(document.getElementById("loginPassword").value)
 
     if (!email || !password) alert('Something wrong with you input')
     else {
-      fetchUsers()
-      .then(res => {
-        res.forEach(user => {
-          if (user.email == email && user.password == password) {
-            submitLogin.reset()
-            window.location.href = "/index.html";
-          } else alert('Wrong password/email')
-        });
-      })
-      .catch(err => console.log(err))
+      await fetchUsers()
+        .then(res => {
+          res.forEach(user => {
+            if (user.email == email && user.password == password) {
+              window.location.href = "/index.html"
+              localStorage.setItem("user", JSON.stringify({ email, name: user.name }))
+            }
+          });
+        })
+        .catch(err => console.log(err))
     }
   })
 })

@@ -1,3 +1,4 @@
+const BASE_URL = 'https://62ef17998d7bc7c2eb74f2bc.mockapi.io'
 document.addEventListener("DOMContentLoaded", () => {
   const listCart = document.getElementById("listCart")
   const payment = document.getElementById("payment")
@@ -44,22 +45,32 @@ document.addEventListener("DOMContentLoaded", () => {
       })
     }
   }
-  let newCart = {}
-  payment.addEventListener("click", (e) => {
+
+  payment.addEventListener("click", async (e) => {
     e.preventDefault()
     for (let product in cart) {
       const paymentValue = document.getElementById(`${product}-val`).value
-      if ((paymentValue > cart[product].stock) == true) alert('Stock is not enough')
+      if ((paymentValue > cart[product].stock) == true) {
+        alert('Stock is not enough')
+        return
+      }
       else {
         cart[product] = {
           ...cart[product],
           qty: paymentValue,
           stock: cart[product].stock - paymentValue
         }
+        await fetch(`${BASE_URL}/products/${cart[product].id}`, {
+          method: "PUT",
+          body: JSON.stringify({ stock: cart[product].stock}),
+          headers: {
+            "Content-type": "application/json; charset=UTF-8"
+          }
+        })
         localStorage.setItem("cart", JSON.stringify(cart))
-        window.location.href = "/5.html";
       }
     }
+    window.location.href = "/5.html";
   })
 })
 
