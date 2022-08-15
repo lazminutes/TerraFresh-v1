@@ -6,7 +6,10 @@ document.addEventListener("DOMContentLoaded", () => {
   const hargaTotal = document.getElementById("harga-total")
   const divTotal = document.getElementById("div-total")
   let cart = JSON.parse(localStorage.getItem("cart"))
+  let user = JSON.parse(localStorage.getItem("user"))
   let jumlahHarga = 0
+
+  namePayment.innerText = user.name
 
   divTotal.addEventListener("click", (e) => {
     e.preventDefault()

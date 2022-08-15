@@ -20,6 +20,8 @@ document.addEventListener("DOMContentLoaded", () => {
             if (user.email == email && user.password == password) {
               window.location.href = "/index.html"
               localStorage.setItem("user", JSON.stringify({ email, name: user.name }))
+            } else {
+              console.log('Wrong email or password.');
             }
           });
         })

@@ -68,7 +68,7 @@ document.addEventListener("DOMContentLoaded", async () => {
           cart[`${product.name}`] = {
             ...cart[`${product.name}`],
             qty: cart[`${product.name}`]["qty"] + 1,
-            stock: cart[`${product.name}`]["stock"] - 1
+            stock: cart[`${product.name}`]["stock"]
           }
         }
       }
