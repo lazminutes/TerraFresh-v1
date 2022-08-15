@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment | TerraFresh</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/payment.css">
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap">
+</head>
+<body>
+
+    <!--Container-->
+    <div class="container d-lg-flex" style="border-radius: 15px;">
+        <!-- Box 1 -->
+        <div class="box-1 bg-light user" style="margin-top: 20px;">
+            <div class="d-flex align-items-center mb-3">
+                <img src="https://raw.githubusercontent.com/lazminutes/TerraFresh/staging/Img/ava.png"
+                    class="pic rounded-circle" alt="avatar">
+                <p class="ps-2 name" id="name-payment"></p>
+            </div>
+
+            <!-- Pembayaran -->
+            <div class="box-inner-1 pb-3 mb-3">
+                <p class="fw-bold">Ringkasan Pembayaran :</p>
+                <div class="d-flex flex-column justify-content-between mb-3" id="nota">
+                </div>
+
+                <!-- Carousel -->
+                    <div class="row" id="carousel-payment">
+                    </div>
+
+                <!-- Jasa kirim -->
+                <div class="radiobtn">
+                    <p class="dis fw-bold mb-2" style="margin-top: 20px;">Pilih jasa kirim favorit anda</p>
+                    <input type="radio" name="box" id="one">
+                    <input type="radio" name="box" id="two">
+                    <label for="one" class="box py-2 first">
+                        <div class="d-flex align-items-start">
+                            <span class="circle" style="margin-top: 15px"></span>
+                            <img src="https://raw.githubusercontent.com/lazminutes/TerraFresh/staging/Img/grab.png" alt="">
+                            <div class="course">
+                                <div class="d-flex align-items-center justify-content-between mb-2">
+                                    <span class="fw-bold">
+                                      Grab             
+                                    </span>                                 
+                                </div>
+                                <span>Ongkos kirim Rp.10.000</span>
+                            </div>
+                        </div>
+                    </label>
+                    <label for="two" class="box py-2 second">
+                        <div class="d-flex">
+                            <span class="circle" style="margin-top: 15px"></span>
+                            <img src="https://raw.githubusercontent.com/lazminutes/TerraFresh/staging/Img/gojek.png" alt="">
+                            <div class="course">
+                                <div class="d-flex align-items-center justify-content-between mb-2">
+                                    <span class="fw-bold">
+                                        Gojek
+                                    </span>
+                                </div>
+                                <span>Ongkos kirim Rp.10.000</span>
+                            </div>
+                        </div>
+                    </label>
+                </div>
+
+                <!-- Alamat -->
+                  <form action="">
+                    <div>
+                        <p class=" dis fw-bold mb-2" style="margin-top: 30px;">Silahkan mengisi alamat anda</p>
+                    </div>
+                    <div class="mb-3" style="margin-top: 20px;">
+                        <input class="form-control" type="text" placeholder="Nama Penerima">
+                        <p class="dis mb-2">Nama</p>
+                    </div>
+                    <div class="mb-3">
+                      <input class="form-control" type="text" placeholder="Alamat Penerima">
+                      <p class="dis mb-2">Alamat</p>
+                  </div>
+                  <div class="mb-3">
+                    <input class="form-control" type="text" placeholder="No Hp Penerima">
+                    <p class="dis mb-2">No. Handphone</p>
+                </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Box 2 -->
+        <div class="box-2" style="margin-top: 80px;">
+            <div class="box-inner-2">
+
+                <!-- Metode Pembayaran -->
+                <form action="">
+                  <p class="dis fw-bold mb-2">Pilih Metode Pembayaran</p>
+                  <div class="radiobtn">
+                    <input type="radio" name="box" id="three">
+                    <input type="radio" name="box" id="four">
+                    <input type="radio" name="box" id="five">
+                    <input type="radio" name="box" id="six">
+                    <input type="radio" name="box" id="seven">
+                    <label for="three" class="box py-2 third">
+                        <div class="d-flex">
+                            <span class="circle" style="margin-top: 15px"></span>
+                            <img src="https://raw.githubusercontent.com/lazminutes/TerraFresh/image/img/tera.jpg" alt="">
+                            <div class="course">
+                                <div class="d-flex align-items-center justify-content-between mb-2">
+                                    <span class="fw-bold">
+                                      TerraFresh Pay 
+                                    </span>
+                                </div>
+                                <span>Sisa Saldo anda : Rp 500.000</span>
+                            </div>
+                        </div>
+                    </label>
+                      <label for="four" class="box py-2 fourth">
+                          <div class="d-flex">
+                              <span class="circle" style="margin-top: 15px"></span>
+                              <img src="https://raw.githubusercontent.com/lazminutes/TerraFresh/image/img/bri.png" alt="">
+                              <div class="course">
+                                  <div class="d-flex align-items-center justify-content-between mb-2">
+                                    <span class="fw-bold">
+                                        Bank BRI (Dicek Otomatis)                                 
+                                      </span>                                     
+                                  </div>
+                                  <span>Hanya menerima dari Bank BNI</span>
+                              </div>
+                          </div>
+                      </label>
+                      <label for="five" class="box py-2 fifth">
+                          <div class="d-flex">
+                              <span class="circle" style="margin-top: 15px"></span>
+                              <img src="https://raw.githubusercontent.com/lazminutes/TerraFresh/image/img/bni.PNG" alt="" >
+                              <div class="course">
+                                  <div class="d-flex align-items-center justify-content-between mb-2">
+                                      <span class="fw-bold">
+                                        Bank BNI (Dicek Otomatis)
+                                      </span>
+                                  </div>
+                                  <span>Hanya menerima dari Bank BRI</span>
+                              </div>
+                          </div>
+                      </label>
+                      <label for="six" class="box py-2 sixth">
+                        <div class="d-flex">
+                            <span class="circle" style="margin-top: 15px"></span>
+                            <img src="https://raw.githubusercontent.com/lazminutes/TerraFresh/image/img/bsi1.PNG" alt="">
+                            <div class="course">
+                                <div class="d-flex align-items-center justify-content-between mb-2">
+                                    <span class="fw-bold">
+                                      Bank BSI (Dicek Otomatis)
+                                    </span>
+                                </div>
+                                <span>Hanya menerima dari Bank BSI</span>
+                            </div>
+                        </div>
+                    </label>
+                    <label for="seven" class="box py-2 seventh">
+                      <div class="d-flex">
+                          <span class="circle" style="margin-top: 15px"></span>
+                          <img src="https://raw.githubusercontent.com/lazminutes/TerraFresh/image/img/mandiri.png" alt="">
+                          <div class="course">
+                              <div class="d-flex align-items-center justify-content-between mb-2">
+                                <span class="fw-bold">
+                                  Bank Mandiri (Dicek Otomatis)
+                                </span>
+                            </div>
+                            <span>Hanya menerima dari Mandiri</span>
+                        </div>
+                      </div>
+                  </label>
+                  </div>
+                </form>
+                <div class="cost">
+                    <p class="dis fw-bold mb-2" style="margin-top: 30px;">Total Biaya</p>
+                </div>
+                    <div class="d-flex flex-column dis">
+                        <div class="d-flex align-items-center justify-content-between mb-2">
+                        <p>Jumlah Harga</p>
+                        <p id="harga-satuan"></p>
+                        </div>
+                    <div class="d-flex align-items-center justify-content-between mb-2">
+                        <p>Ongkos Kirim</p>
+                        <p>Rp 10.000</p>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between mb-2">
+                        <p>Biaya Penanganan</p>
+                        <p>Rp 5.000</p>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between mb-2">
+                        <p class="fw-bold">Total</p>
+                        <p class="fw-bold" id="harga-total"></p>
+                    </div>
+                    <div class="btn btn-warning mt-2" id="div-total"></div>
+                    </div>
+            </div>
+        </div>
+    </div>
+      
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
+        </script>
+        <script src="./js/payment.js"></script>
+</body>
+</html>
